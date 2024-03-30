@@ -1,0 +1,8 @@
+FROM centos:7
+LABEL author="atharv"
+RUN yum install java-11-openjdk -y
+ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.100/bin/apache-tomcat-8.5.100.tar.gz /opt/ 
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /opt/apache-tomcat-8.5.100/webapps/
+
+
+
